@@ -1,6 +1,6 @@
 import sys
 
-from PyQt5.QtGui import QColor
+from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 
 
@@ -12,6 +12,9 @@ class DlgMain(QDialog):
 
         self.btn = QPushButton("Choose Font", self )
         self.btn.move(40, 40)
+        self.btn.resize(120, 40)
+        font = QFont("Montserrat", 20, 75, True)
+        self.btn.setFont(font)
         self.btn.clicked.connect(self.MessageBox_Showing)
 
 
