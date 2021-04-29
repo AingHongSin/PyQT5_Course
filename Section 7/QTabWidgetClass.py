@@ -6,7 +6,7 @@ from PyQt5.QtCore import *
 class DlgMain(QDialog):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("QStackLayout")
+        self.setWindowTitle("QTabWidgetClass")
         # self.resize(200,200)
 
         #### Create Widget
